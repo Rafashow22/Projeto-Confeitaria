@@ -36,16 +36,30 @@ text-decoration: none;
 color: #1d1d1d;
 }
 
+
+#phone_button{
+    color: white;
+}
+#phone_button:hover{
+    opacity: 0.5;
+}
+.btn-default{
+    color: white;
+}
+.btn-default:hover{
+    opacity: 0.5;
+}
 #phone_buttons{
 display: flex;
 gap: 8px;
 align-items: center;
 background-color: #ffffff;
-padding: 8px 14px;
+padding: 9px 14px;
 font-size: 500;
 box-shadow: 0px 0px 12px 4px rgba(0,0,0,0.1);
 border-radius: 12px;
 }
+
 
 #banner{
 display: flex;
