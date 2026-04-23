@@ -125,7 +125,7 @@ animation: pulse 3s ease-in-out;
 
 @media screen and (max-width: 450px){
 #phone_button button{
-    display: none;
+    
 }
 
 
