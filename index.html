@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="./Styles/menu.css">
     <link rel="stylesheet" href="./Styles/testimonial.css">
     <link rel="stylesheet" href="./Styles/footer.css">
+    <link rel="stylesheet" href="./Styles/carrinho.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -22,7 +24,7 @@
 </head>
 
 
-<body>
+<body id="tudo">
     <header>
         <nav id="navheader">
             <i class="fa-solid fa-candy-cane" id="navlogo">DocurasdaLu</i>
@@ -189,7 +191,7 @@
                     </div>
                     <div class="dish-price">
                         <h4>R$ 8,00</h4>
-                        <button class="btn-default">
+                          <button class="btn-default">
                             <i class="fa-solid fa-basket-shopping"></i>
 
 
@@ -397,12 +399,33 @@
 
 
 
+  </section>
+<section id="car">
+    <div class="car-buy">
 
-        </section>
+<h1>Seu Carrinho</h1>
 
+<p>Produtos:</p>
 
+<ul id="cart-items"></ul> <!-- 🔥 FALTAVA ISSO -->
+
+<p>Valor: <span id="total-value">R$ 0,00</span></p>
+
+<p>Seu endereço:</p>
+<input type="text" placeholder="Digite o endereço">
+
+<div id="button-finalizar">
+  <button id="button-close">Fechar</button>
+  <button id="limpar-carrinho">Limpar Carrinho</button>
+  <button id="button-end">Finalizar pedido</button>
+</div>
+
+</div>
     </main>
 
+     
+
+</section>
     <footer>
         <svg viewBox="0 0 1920 366" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <path fill="rgba(255, 249, 234, 1)"
