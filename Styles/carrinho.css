@@ -1,15 +1,15 @@
 #car{
  background: #ffff;
-  top: 50%;
+  top: 60px;
   position: absolute;
   z-index: 999;
   display: none;
   justify-content: center;
   align-items: center;
   align-content: center;
-  width: 60%;
+   width: min(560px, 94vw);
   height: 90%;
-  left: 20%;
+  left: 30%;
   border: 6px solid #be448b;
   border-radius: 36px;
 
@@ -18,11 +18,11 @@
 .car-buy{
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 100vw;
     display: flex;
     justify-content: center;
-    gap: 24px;
-    margin-top: 32px;
+    padding:11px;
+    
 }
 
 h1{
@@ -52,6 +52,59 @@ width: 140px;
   font-weight: bold;
 }
 
+.controle-qtd {
+  display: flex;          /* 🔥 ESSENCIAL */
+  align-items: center;
+  gap: 10px;
+}
+
+
+
+button.btn-diminuir{
+   background-color: #be448b;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 7px;
+  font-weight: bold;
+}
+button.btn-aumentar{
+   background-color: #be448b;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 7px;
+  font-weight: bold;
+}
+span.qtd{
+    border: 3px solid #ddd;
+  width: 60px;
+  height: 40px;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cake-icon {
+  color: #ff4d8d;
+  font-size: 24px;
+}
+button.btn-remover{
+   background-color: #f5b9cf;
+  border: 1px solid #ddd;
+  color: #ff4d8d;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+.trash-icon {
+  color: #ff4d8d;
+  font-size: 20px;
+}
+
 #button-end:hover{
     opacity: 0.5;
 }
@@ -60,9 +113,132 @@ width: 140px;
     }
 
 
+
     .item-carrinho{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 6px;
+    margin-bottom: 5px;
+    border: 3px solid #ddd;
+    border-radius: 8px;
+}
+.products{
+    border: 3px solid #ddd;
+  border-radius: 7px;
+  
+  align-content: center;
+  align-items: center;
+    display: flex;
+    padding: 3px;
+    margin-bottom: 10px;
+}
+.products:hover{
+  background: #f5b9cf;
+  opacity: 0.5;
+}
+
+#p-car{font-size: 15px;
+  font-weight: bold;
+  margin-left: 10px;}
+
+.buy-icon{ 
+  font-size: 25px;
+  color:#ff4d8d;
+  background: pink;
+  border-radius: 22px;
+  align-content: center;
+  height: 35px;
+  
+}
+.item-bolo{
+  font-size:15px;
+}
+
+.products:hover{
+  background: #f5b9cf;
+  opacity: 0.5;
+}
+    
+.value-total{
+   padding:4px;
+  border: 3px solid #ddd;
+  border-radius: 7px;
+  width: 100%;
+  }
+
+  #total-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.total-left{
+font-weight: bold;
+  
+}
+
+.wallet-icon {
+  font-size: 35px;
+  color: #ff4d8d;
+  background: pink;
+  border-radius: 22px;
+  align-content: center;
+  height: 45px;
+}
+
+#total-value{
+color: #ff4d8d;
+  font-weight: bold;
+}
+
+.value-total:hover {
+   background: #f5b9cf;
+  opacity: 0.5;
+  text-shadow: 0 0 10px #ff4d8d;
+}
+
+.enderect{
+  margin-top: 10px;
+   padding:4px;
+  border: 3px solid #ddd;
+  border-radius: 7px;
+  width: 100%;
+}
+#pp{
+  font-weight: bold;
+  font-size: 15px;
+}
+#pp1{
 width: 100%;
-  height: 50%;
+  border: 3px solid pink;
+  border-radius: 5px;
+}
+
+
+@media screen and (max-width: 1170px){
+    #car{
+display: flex;
+    position: absolute;
+    top: 60px;
+    gap: 0px;
+    width: 97vw;
+    height: 90%;
+    margin-left: -18px;
+  } 
+.car-buy{
+
+    display: flex;
+  flex-direction: column;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.item-carrinho{
+    width: 100%;
+  height: 60%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -71,6 +247,108 @@ width: 100%;
   margin-bottom: 10px;
   border: 1px solid #ddd;
   border-radius: 8px;
+  position: none;
 }
 
+@media screen and (max-width: 550px){
+
+#car{  display: flex;
+    position: absolute;
+    top: 60px;
+    gap: 0px;
+    width: 97vw;
+    height: 90%;
+    margin-left: -9px;
+
+}
+.car-buy{
+
+position: absolute;
+    flex-direction: column;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+
+}
+h1{
+  font-size: 20px;
+  color: #be448b;
+  text-align: center;
+}
+.products{
+border: 3px solid #ddd;
+  border-radius: 7px;
+  align-content: center;
+  align-items: center;
+  display: flex;
+  padding: 1px;
+  margin-bottom: 6px;
+}
+.item-carrinho{
+width: 100%;
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 1px;
+    margin-bottom: 5px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
     
+  }
+
+  .item-bolo{
+    display: flex;
+  gap: 8px;
+  }
+
+  strong#letra{
+font: size 10px;
+
+  }
+.controle-qtd{
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+button.btn-diminuir{
+  background-color: #be448b;
+  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 7px;
+  font-weight: bold;
+  font-size: 10px;
+}
+span.qtd{
+  width: 30px;
+  height: 30px;
+  border-radius: 7px;
+  font-weight: bold;
+  font-size: 10px;
+  
+}
+
+button.btn-aumentar{
+  background-color: #be448b;
+  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 7px;
+  font-weight: bold;
+  font-size: 10px;
+}
+
+media (max-width: 380px) {
+  #car { 
+    border-radius: 14px; border-width: 3px; }
+
+
+}}
+
+
+
+
+
+

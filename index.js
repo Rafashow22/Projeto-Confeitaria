@@ -1,9 +1,9 @@
 $(document).ready(function () {
-    $('#mobile_btn').on('click', function () {
-        $('#mobile_menu').toggleClass('active');
-        $('#mobile_btn').find('i').toggleClass('fa-x');
+  $('#mobile_btn').on('click', function () {
+    $('#mobile_menu').toggleClass('active');
+    $('#mobile_btn').find('i').toggleClass('fa-x');
 
-    });
+  });
 
 
 });
@@ -50,7 +50,7 @@ fechar.addEventListener('click', () => {
 // ==========================
 // ADICIONAR PRODUTO
 // ==========================
-produtos.addEventListener('click', function(event) {
+produtos.addEventListener('click', function (event) {
   const botao = event.target.closest('.btn-default');
 
   if (botao) {
@@ -85,22 +85,35 @@ function renderizarCarrinho() {
 
   carrinho.forEach((item, index) => {
     const li = document.createElement('li');
-li.classList.add('item-carrinho');
+    li.classList.add('item-carrinho');
     const subtotal = item.valor * item.qtd;
 
     li.innerHTML = `
-      <strong>${item.nome}</strong><br>
+    <div =class="item-bolo">
+        <i class="fa-solid fa-cookie cake-icon"></i> 
+         
+    <strong id="letra">${item.nome}</strong><br>
+    </div>
 
-      <button class="btn-diminuir" data-index="${index}">➖</button>
-      <span> ${item.qtd} </span>
-      <button class="btn-aumentar" data-index="${index}">➕</button>
+<div class="controle-qtd">
+    <button class="btn-diminuir" data-index="${index}">
+      <i class="fa-solid fa-minus"></i>
+    </button>
 
+    <span class="qtd">${item.qtd}</span>
+
+    <button class="btn-aumentar" data-index="${index}">
+      <i class="fa-solid fa-plus"></i>
+    </button>
+  </div>
       - ${subtotal.toLocaleString('pt-BR', {
-        style: 'currency',
-        currency: 'BRL'
-      })}
+      style: 'currency',
+      currency: 'BRL'
+    })}
 
-      <button class="btn-remover" data-index="${index}">❌</button>
+     <button class="btn-remover" data-index="${index}">
+    <i class="fa-solid fa-trash trash-icon"></i>
+  </button>
     `;
 
     carrinhoLista.appendChild(li);

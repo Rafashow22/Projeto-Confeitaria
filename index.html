@@ -404,16 +404,22 @@
     <div class="car-buy">
 
 <h1>Seu Carrinho</h1>
-
-<p>Produtos:</p>
-
+<div class="products">
+    <i class="fa-solid fa-bag-shopping buy-icon"></i>
+<p id="p-car">Produtos:</p>
+</div>
 <ul id="cart-items"></ul> <!-- 🔥 FALTAVA ISSO -->
-
-<p>Valor: <span id="total-value">R$ 0,00</span></p>
-
-<p>Seu endereço:</p>
-<input type="text" placeholder="Digite o endereço">
-
+<div class="value-total">
+<p id="total-box">
+     <span class="total-left">
+      <i class="fa-solid fa-wallet wallet-icon"></i>
+      Valor:
+    </span><span id="total-value">R$ 0,00</span></p>
+</div>
+<div class="enderect">
+<p id="pp">Seu endereço:</p>
+<input id=pp1 type="text" placeholder="Digite o endereço">
+</div>
 <div id="button-finalizar">
   <button id="button-close">Fechar</button>
   <button id="limpar-carrinho">Limpar Carrinho</button>
