@@ -220,13 +220,13 @@ width: 100%;
 
 @media screen and (max-width: 1170px){
     #car{
-display: flex;
+display: none;
     position: absolute;
     top: 60px;
     gap: 0px;
     width: 97vw;
     height: 90%;
-    margin-left: -18px;
+    left:1%
   } 
 .car-buy{
 
@@ -252,13 +252,13 @@ display: flex;
 
 @media screen and (max-width: 550px){
 
-#car{  display: flex;
+#car{  display: none;
     position: absolute;
     top: 60px;
     gap: 0px;
     width: 97vw;
     height: 90%;
-    margin-left: -9px;
+    
 
 }
 .car-buy{
@@ -340,15 +340,18 @@ button.btn-aumentar{
   font-size: 10px;
 }
 
-media (max-width: 380px) {
+@media (max-width: 380px) {
   #car { 
+    display: none;
     border-radius: 14px; border-width: 3px; }
 
 
-}}
+}
+}
 
 
 
 
 
 
+}
